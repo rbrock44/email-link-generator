@@ -34,12 +34,13 @@ mat-form-field {
     overflow: visible
 }
 
-mat-label {
-    height: 20px;
-}
-
 .generated-link {
     margin-top: 20px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
 }
 
 .container {

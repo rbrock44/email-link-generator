@@ -1,6 +1,5 @@
 <div class="container">
   <h1 class="margin-top">Email Link Generator</h1>
-
   <mat-form-field>
     <mat-label>To</mat-label>
     <input matInput type="email" [formControl]="emailControl" />
@@ -9,12 +8,12 @@
     <mat-label>Subject</mat-label>
     <input matInput name="subject" type="text" [formControl]="subjectControl" />
   </mat-form-field>
-  <!-- <mat-form-field>
+  <mat-form-field>
     <mat-label>Body</mat-label> 
+    <input matInput name="body" type="text" [formControl]="bodyControl" style="display: none;"/>
     <textarea placeholder="Body" name="body" [formControl]="bodyControl"></textarea>
-  </mat-form-field> -->
-  <button mat-raised-button color="primary" type="submit" (click)="this.generateLink()">Generate Link</button>
-
+  </mat-form-field>
+  <button mat-raised-button color="primary" type="submit" (click)="generateLink()">Generate Link</button>
 
   <div *ngIf="generatedLink" class="generated-link">
     <h3>Generated Link</h3>

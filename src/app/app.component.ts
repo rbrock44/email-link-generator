@@ -51,9 +51,9 @@ export class AppComponent {
 
         if (this.bodyControl.value != '') {
           if (subjectAdded) {
-            this.generatedLink = '&';
+            this.generatedLink += '&';
           }
-          this.generatedLink = `body=${encodeURIComponent(this.bodyControl.value)}`;
+          this.generatedLink += `body=${encodeURIComponent(this.bodyControl.value)}`;
         }
       }
     }

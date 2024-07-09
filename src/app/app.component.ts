@@ -37,6 +37,26 @@ export class AppComponent {
   }
 
   generateLink() {
+    if (this.emailControl.value != '') {
+      this.generatedLink = `mailto:${this.emailControl.value}`;
+
+      if (this.subjectControl.value != '' || this.bodyControl.value != '') {
+        this.generatedLink += '?';
+
+        let subjectAdded = false;
+        if (this.subjectControl.value != '') {
+          this.generatedLink += `subject=${encodeURIComponent(this.subjectControl.value)}`;
+          subjectAdded = true;
+        }
+
+        if (this.bodyControl.value != '') {
+          if (subjectAdded) {
+            this.generatedLink = '&';
+          }
+          this.generatedLink = `body=${encodeURIComponent(this.bodyControl.value)}`;
+        }
+      }
+    }
     this.generatedLink = `mailto:${this.emailControl.value}?subject=${encodeURIComponent(this.subjectControl.value)}&body=${encodeURIComponent(this.bodyControl.value)}`;
   }
 

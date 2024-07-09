@@ -56,6 +56,8 @@ export class AppComponent {
           this.generatedLink += `body=${encodeURIComponent(this.bodyControl.value)}`;
         }
       }
+    } else {
+      this.generatedLink = '';
     }
   }
 

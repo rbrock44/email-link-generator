@@ -57,7 +57,6 @@ export class AppComponent {
         }
       }
     }
-    this.generatedLink = `mailto:${this.emailControl.value}?subject=${encodeURIComponent(this.subjectControl.value)}&body=${encodeURIComponent(this.bodyControl.value)}`;
   }
 
   copyToClipboard() {

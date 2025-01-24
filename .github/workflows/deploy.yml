@@ -27,6 +27,10 @@ jobs:
 
     - name: Build Project
       run: npm run deploy
+ 
+    - name: Add CNAME
+      run: |
+        cp CNAME ./dist/email-link-generator/browser/CNAME
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3

@@ -1,29 +1,66 @@
 # EmailLinkGenerator
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.7.
+> This project helps create email mail to links with parameters <br/>
+> [Live - EmailLinkGenerator Website](https://email-link-generator.ryan-brock.com/)
 
-## Development server
+---
 
-Run `ng serve` or `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 📚 Table of Contents
 
-## Code scaffolding
+- [What's My Purpose?](#-whats-my-purpose)
+- [Technologies](#-technologies)
+- [Getting Started (Local Setup)](#-getting-started-local-setup)
+  - [Run Locally](#run-locally)
+  - [Test](#test)
+  - [GitHub Hooks](#github-hooks)
+  - [Build](#build)
+  - [Deploy](#deploy)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+---
 
-## Build
+## 🧠 What's My Purpose?
+
+This is a server side single-page angular frontend created to assist in creating mail to email links that I needed for another application
+
+---
+
+## 🛠 Technologies
+
+- Framework: `Angular 18`
+- Testing: `Karma`
+- Deployment: `GitHub Pages`
+
+---
+
+## 🚀 Getting Started (Local Setup)
+
+* Install [node](https://nodejs.org/en) - v18 is needed (v20 also works)
+* Clone [repo](https://github.com/rbrock44/email-link-generator)
+
+### Run Locally
+
+```
+npm install
+npm start
+```
+
+### Test
+
+- Unit
+    - `ng test` || `npm run test`
+- Integration
+    - `ng e2e` || `npm run e2e`
+
+### Github Hooks
+
+- Build
+    - Trigger: On Push to Main
+    - Action(s): Builds application then kicks off gh page action to deploy build output
+
+### Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Deploy
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-No current test, perhaps might add in furture.
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-No current tests, perhaps might add in furture.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Run `npm run prod` to build and deploy the project. Make sure to be on `master` and that it is up to date before running the command. It's really meant to be a CI/CD action

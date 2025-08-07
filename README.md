@@ -3,11 +3,16 @@
 > This project helps create email mail to links with parameters <br/>
 > [Live - EmailLinkGenerator Website](https://email-link-generator.ryan-brock.com/)
 
+Screenshots:
+![preview](/screenshots/main.png)
+![generated](/screenshots/generated.png)
+
 ---
 
 ## 📚 Table of Contents
 
 - [What's My Purpose?](#-whats-my-purpose)
+- [How to Use](#-how-to-use)
 - [Technologies](#-technologies)
 - [Getting Started (Local Setup)](#-getting-started-local-setup)
   - [Run Locally](#run-locally)
@@ -21,6 +26,20 @@
 ## 🧠 What's My Purpose?
 
 This is a server side single-page angular frontend created to assist in creating mail to email links that I needed for another application
+
+---
+
+## 🚦 How to Use
+
+Fill out fields and hit the generate link button, a link below with a copy button will appear <br/><br/>
+
+- `To` - The to (email) of the email
+- `Subject` - The subject line of the email
+- `Body` - The body of the email
+
+Screenshots:
+![preview](/screenshots/main.png)
+![generated](/screenshots/generated.png)
 
 ---
 
